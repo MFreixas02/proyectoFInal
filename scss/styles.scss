@@ -1,0 +1,422 @@
+@import "variables";
+
+body {
+    background-color: rgb(26, 116, 143);
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(26,116,143,1) 29%);
+
+    main {
+    width: 100%;
+    height: 50vh;
+    background-color: color rgb(26, 116, 143);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    text-shadow: black 2px 2px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+
+    .tituloCarousel {
+        color: white;
+        text-align: center;
+
+    }
+
+    .imagenejemplo {
+    width: 63%;
+    border-radius: 20px;
+    border-width: 100%;
+    background-color: rgb(26, 116, 143);
+    background-position: center;
+    margin-left: 280px;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.fondonavegador {
+    background-color: rgba(26,116,143,1);
+}
+
+#barra {
+    height: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    width: 800px;
+    justify-content: space-between;
+
+:hover >ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+#submenufly {
+    display: none;
+}
+
+}
+
+
+
+header {
+font-family: 'Josefin Sans', sans-serif;
+text-align: center;
+background-color: rgba(255,255,255,1);
+
+
+    nav {
+        padding: 10px 15px;
+        position: fixed;
+        top:0
+    }
+
+
+    ul {
+    margin-top: 40px;
+    list-style: none;
+}
+
+    li {
+    margin-left: 15px;
+}
+
+    a {
+    text-decoration: none; color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgba(26,116,143,1);
+    border-radius: 60%;
+    border-color: white 1px 2px;
+}
+
+
+    h1 {
+        font-size: 20px;
+        background-color: rgba(26,116,143,1);
+    }
+
+
+#logoFly {
+    width: 80px;
+    float: left;
+}
+
+#logoNav img{
+width: 250px;
+}
+
+}
+    }
+}
+
+/*tarjetasconflex*/
+
+.tarjetasInicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.tarjeta
+{
+    .Superior{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: 25%;
+}
+
+.Inferior {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%
+}
+
+.tarjeta1 {
+border-color: black;
+border-width: 3px;
+width: 120;
+}
+
+
+.imagenTarjetas {
+    max-width: 50px;
+}
+
+.tarjetaSuperior{
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.tarjetaInferior {
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    text-decoration: none;
+}
+/**aca va el mixin**/
+
+@mixin botones {
+    background-color: $colorPrincipal;
+    border-radius: 5px;
+    font-weight: $estilo-fuente;
+}
+
+.botonTarjetas 
+{
+    @include botones;
+    margin-top: 30px;
+}
+
+/**aca termina el mixin**/
+
+a {
+    width: 130px;
+    background-color: rgb(26, 116, 143);
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+}
+
+}
+
+
+
+    .titulo {
+        color: rgb(255, 255, 255);
+        background-color:rgb(26, 116, 143);
+        text-align: center;
+    }
+
+    .fraseInicial {
+        color: rgb(255, 255, 255);
+        background-color: rgb(26, 116, 143);
+        margin-top: 0;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size:$tamaño-fuente-grande/2;
+        margin-top: 30x;
+    }
+
+    /*footer*/
+
+    footer {
+        margin-top: 100%;
+        color: rgba(26,116,143,1);
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        text-shadow: rgb(19, 88, 109) 0.5px 1px;
+        border-color:  rgba(26,116,143,1);
+
+    div {
+        color: rgba(26,116,143,1);
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        
+    }
+
+    a {
+        color: rgba(26,116,143,1);
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+    }
+
+    .contactanos{
+        color: rgba(26,116,143,1);
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+
+    /*Aca empieza la pagina "servicios"*/
+    
+.bodyServicios {
+    background-color: rgb(26, 116, 143);
+}
+
+.serviciosTitulo {
+    color: white;
+    background-color: rgb(26, 116, 143);
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+}
+
+
+.servicios {
+        background-color: rgb(26, 116, 143);
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 150px;
+
+    }
+
+    .subtituloServicios {
+        color: white;
+        background-color: rgb(26, 116, 143);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 200px;
+    }   
+
+    .epigrafeServicios {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 150px;
+        font-size: 30px;
+    }
+
+    .imagenServicios {
+        margin-left: 270px;
+        margin-bottom: 300x;
+    }
+
+    /*aca empieza la pagina "quienessomos"*/
+
+
+    .titulosomosFly {
+        width: 500px;
+        margin-left: 35%;
+        margin-top: 150px;  
+    }
+
+    .animacionFly {
+        animation-duration: 1.5s;
+        animation-name: animacionFly;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes animacionFly {
+        from {
+            -webkit-transform: rotate(0deg);
+            transform: rotateY(0deg);
+        }
+        50%{
+            -webkit-transform: rotate(180deg);
+            transform: rotateY(180deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+            transform: rotateY(360deg);
+            }
+    }
+
+    .somosFly {
+        background-color: rgb(26, 116, 143);
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .parrafoSomos {
+        color:white;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .subtitlesomosFly {
+        text-align: center;
+        color: white;
+    }
+
+    iframe {
+        margin-left: 30%;
+        color: white;
+        margin-top: 70px;
+
+    }
+
+    /*Aca empieza el portfolio con grid*/
+
+    .tituloPortfolio {
+        background-color: rgb(26, 116, 143);
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .subtituloPortfolio {
+        background-color: rgb(26, 116, 143);
+        color: white;
+        text-align: center;
+    }
+
+    .gridPortfolio {
+        grid-template-areas: 
+        "uno dos" 
+        "tres cuatro";
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .uno {
+        grid-area: "uno";
+    }
+
+    .dos {
+        grid-area: "dos";
+    }
+
+    .tres {
+        grid-area:"tres";
+    }
+
+    .cuatro {
+        grid-area:"cuatro";
+    }
+
+    /*Aca empieza la seccion "contactanos*/
+
+    .textoContacto {
+        background-color: rgb(26, 116, 143);
+        color: white;
+        text-align: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 100%;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 15%;
+        margin-bottom: 0%;
+    }
+
+/**media**/
+
+@media all and (min-width:768px) {
+
+}

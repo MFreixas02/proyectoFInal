@@ -1,0 +1,353 @@
+/* line 3, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+body {
+  background-color: #1a748f;
+  background: white;
+  background: linear-gradient(0deg, white 0%, #1a748f 29%); }
+  /* line 8, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  body main {
+    width: 100%;
+    height: 50vh;
+    background-color: color #1a748f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    text-shadow: black 2px 2px 10px;
+    font-family: 'Josefin Sans', sans-serif; }
+    /* line 18, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+    body main .tituloCarousel {
+      color: white;
+      text-align: center; }
+    /* line 24, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+    body main .imagenejemplo {
+      width: 63%;
+      border-radius: 20px;
+      border-width: 100%;
+      background-color: #1a748f;
+      background-position: center;
+      margin-left: 280px;
+      margin-top: 120px;
+      display: flex;
+      align-items: center; }
+    /* line 36, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+    body main .titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px; }
+    /* line 44, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+    body main .fondonavegador {
+      background-color: #1a748f; }
+    /* line 48, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+    body main #barra {
+      height: 80%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin-left: 200px;
+      width: 800px;
+      justify-content: space-between; }
+      /* line 57, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main #barra :hover > ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center; }
+      /* line 64, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main #barra #submenufly {
+        display: none; }
+    /* line 72, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+    body main header {
+      font-family: 'Josefin Sans', sans-serif;
+      text-align: center;
+      background-color: white; }
+      /* line 78, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main header nav {
+        padding: 10px 15px;
+        position: fixed;
+        top: 0; }
+      /* line 85, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main header ul {
+        margin-top: 40px;
+        list-style: none; }
+      /* line 90, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main header li {
+        margin-left: 15px; }
+      /* line 94, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main header a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+        background-color: #1a748f;
+        border-radius: 60%;
+        border-color: white 1px 2px; }
+      /* line 104, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main header h1 {
+        font-size: 20px;
+        background-color: #1a748f; }
+      /* line 110, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main header #logoFly {
+        width: 80px;
+        float: left; }
+      /* line 115, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+      body main header #logoNav img {
+        width: 250px; }
+
+/*tarjetasconflex*/
+/* line 125, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.tarjetasInicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10rem; }
+
+/* line 132, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  /**aca va el mixin**/
+  /**aca termina el mixin**/
+  /* line 134, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  .tarjeta .Superior {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: 25%; }
+  /* line 142, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  .tarjeta .Inferior {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%; }
+  /* line 148, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  .tarjeta .tarjeta1 {
+    border-color: black;
+    border-width: 3px;
+    width: 120; }
+  /* line 155, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  .tarjeta .imagenTarjetas {
+    max-width: 50px; }
+  /* line 159, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  .tarjeta .tarjetaSuperior {
+    color: white;
+    text-shadow: none;
+    text-decoration: none; }
+  /* line 165, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  .tarjeta .tarjetaInferior {
+    color: white;
+    text-shadow: none;
+    text-decoration: none; }
+  /* line 178, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  .tarjeta .botonTarjetas {
+    background-color: #1a748f;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 30px; }
+  /* line 186, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  .tarjeta a {
+    width: 130px;
+    background-color: #1a748f;
+    border-width: 1px;
+    border-color: black;
+    text-decoration: none;
+    color: white; }
+
+/* line 199, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.titulo {
+  color: white;
+  background-color: #1a748f;
+  text-align: center; }
+
+/* line 205, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.fraseInicial {
+  color: white;
+  background-color: #1a748f;
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  margin-top: 30x; }
+
+/*footer*/
+/* line 217, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+footer {
+  margin-top: 93%;
+  color: #1a748f;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  text-shadow: #13586d 0.5px 1px;
+  border-color: #1a748f; }
+  /* line 226, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  footer div {
+    color: #1a748f;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px; }
+  /* line 234, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  footer a {
+    color: #1a748f;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px; }
+  /* line 241, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+  footer .contactanos {
+    color: #1a748f;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around; }
+
+/*Aca empieza la pagina "servicios"*/
+/* line 253, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.bodyServicios {
+  background-color: #1a748f; }
+
+/* line 257, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.serviciosTitulo {
+  color: white;
+  background-color: #1a748f;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 50px; }
+
+/* line 266, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.servicios {
+  background-color: #1a748f;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 150px; }
+
+/* line 276, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.subtituloServicios {
+  color: white;
+  background-color: #1a748f;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 200px; }
+
+/* line 285, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.epigrafeServicios {
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 30px; }
+
+/* line 292, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.imagenServicios {
+  margin-left: 270px;
+  margin-bottom: 300x; }
+
+/*aca empieza la pagina "quienessomos"*/
+/* line 300, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.titulosomosFly {
+  width: 500px;
+  margin-left: 35%;
+  margin-top: 150px; }
+
+/* line 306, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.animacionFly {
+  animation-duration: 1.5s;
+  animation-name: animacionFly;
+  animation-iteration-count: 1; }
+
+@keyframes animacionFly {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg); } }
+
+/* line 327, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.somosFly {
+  background-color: #1a748f;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 40%;
+  display: flex;
+  align-items: center; }
+
+/* line 337, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.parrafoSomos {
+  color: white;
+  text-align: center;
+  margin-top: 50px; }
+
+/* line 342, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.subtitlesomosFly {
+  text-align: center;
+  color: white; }
+
+/* line 347, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+iframe {
+  margin-left: 30%;
+  color: white;
+  margin-top: 70px; }
+
+/*Aca empieza el portfolio con grid*/
+/* line 356, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.tituloPortfolio {
+  background-color: #1a748f;
+  color: white;
+  text-align: center;
+  margin-top: 100px; }
+
+/* line 363, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.subtituloPortfolio {
+  background-color: #1a748f;
+  color: white;
+  text-align: center; }
+
+/* line 369, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.gridPortfolio {
+  grid-template-areas: "uno dos" 
+ "tres cuatro";
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center; }
+
+/* line 380, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.uno {
+  grid-area: "uno"; }
+
+/* line 384, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.dos {
+  grid-area: "dos"; }
+
+/* line 388, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.tres {
+  grid-area: "tres"; }
+
+/* line 392, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.cuatro {
+  grid-area: "cuatro"; }
+
+/*Aca empieza la seccion "contactanos*/
+/* line 398, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+.textoContacto {
+  background-color: #1a748f;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  align-items: center; }
+
+/* line 407, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+form {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 100%;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15%;
+  margin-bottom: 0%; }
+
+/**media**/
+
+/*# sourceMappingURL=styles.css.map */
