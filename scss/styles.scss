@@ -1,422 +1,438 @@
 @import "variables";
 
-body {
-    background-color: rgb(26, 116, 143);
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(26,116,143,1) 29%);
-
-    main {
-    width: 100%;
-    height: 50vh;
-    background-color: color rgb(26, 116, 143);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: rgb(0, 0, 0);
-    text-shadow: black 2px 2px 10px;
-    font-family: 'Josefin Sans', sans-serif;
-
-    .tituloCarousel {
-        color: white;
-        text-align: center;
-
-    }
-
-    .imagenejemplo {
-    width: 63%;
-    border-radius: 20px;
-    border-width: 100%;
-    background-color: rgb(26, 116, 143);
-    background-position: center;
-    margin-left: 280px;
-    margin-top: 120px;
-    display: flex;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+	background-color:$colorGris;
 }
 
-.titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-
+@mixin botones{
+	background-color:$colorGris;
+	color:$colorAzul;
+	border-radius:4px;
+	padding:0.4em;
+	box-shadow:$sombraCard;
+	font-weight: $fuenteBold;
+	border-style: none;
+	text-decoration:none;
 }
 
-.fondonavegador {
-    background-color: rgba(26,116,143,1);
+@mixin tarjetas{
+	border-radius: 1em;
+	box-shadow: $sombraCard;
+	background-color: $colorAzul;
+	color:$colorGris;
+	font-family: 'Montserrat', sans-serif;
+	border-style: none;
+	text-decoration: none;
+}
+@mixin imagenesServicios{
+	height:16em;
+	border-radius:$bordeCard;
+	background-size:cover;
+	box-shadow:$sombraCard;
+}
+@mixin imagenesServiciosAlt{
+	height:32em;
+	border-radius:$bordeCard;
+	background-size:cover;
+	box-shadow:$sombraCard;
+}
+header{
+	background:$gradiente1;
+	min-height:80px;
+	margin-bottom:1.5em;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	width: 100%;
+	border-radius: 0 0 12px 12px;
+	box-shadow: $sombraCard;
+	.container{
+		.row{
+			justify-content: center;
+			.navbar{
+				display: flex;
+				justify-content: center;
+				width: 90%;
+				margin:0;
+				.navbar-brand{
+					padding:0;
+					.logoM{
+						width: 7em;
+						margin-left:1em;
+					}
+					@media all and (min-width:768px){
+						.logoM{
+						width: 7em;
+						margin-left:6em;
+						}
+					}	
+				}
+				.nav-item {
+					.nav-link{
+						color:$colorGris;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 1em;
+						padding-left:1em;
+						transition: all 0.5s;
+					}
+					.nav-link:hover{
+						color:$colorGris;
+					}
+				}
+				#dropdownMenuLink{
+					border-style:none;
+					color:$azulOscuro;
+					font-family: 'Montserrat', sans-serif;
+					font-size: 1em;
+					padding-left: 0.8em;
+					margin-top: 0.15em;
+					transition: all 0.5s;
+				}
+				#dropdownMenuLink:hover{
+					color:$colorGris;
+				}
+				.dropdown-menu{
+					background-color:$colorAzul;	
+					border-style:none;
+					margin-top:1em;
+					border-radius:1em;	
+					.dropdown-item{
+						color:$colorGris;
+					}
+				}
+				@media all and (min-width:768px){
+					.dropdown-menu{
+						background:$gradiente2;	
+						border-style:none;
+						margin-top:1em;
+						border-radius:0 0 1em 1em;	
+						.dropdown-item{
+							color:$colorGris;
+						}
+					}
+				}
+				#dropdownMenuLink .dropdown .show .dropdown-item{
+					color:$azulOscuro;
+				}					
+				.navbar-toggler{
+					opacity:30%;
+					background-color: $colorGris;
+					margin-top:0.5em;
+					border-radius:200px;
+				}
+ 				.navbar-collapse{
+ 					margin-left:1em;
+ 					width:80%;
+ 				}
+ 				#navbarNav{
+					margin-top:0.5em;	
+					margin-left:1em;
+					.navbar-nav{
+						width:80%;
+						display:flex;
+						justify-content: space-between;
+					}	
+				}	
+			}
+		}	
+	}
+}	
+footer{
+	margin-top:2em;	
+	background: $gradiente2;
+	height: 80px;
+	border-radius:12px 12px 0 0;
+	width: 100%;
+	justify-content: center;
+	.container{
+		justify-content: center;
+		height: 100%;
+		.row{
+			height: 100%;
+			width:100%;
+			align-items:center;
+			justify-content: center;
+			margin-left: 0;
+
+
+			p{
+				font-family: $fuente;
+				font-size: 1em;
+				color: $colorGris;
+				margin-bottom:0;
+			}
+			.logoSocial{
+				margin-left:0.6em;
+			}
+		}
+	}
+}	
+
+.mainInicio{
+	width: 100%; 
+	justify-content: center;
+	margin-top: 2em;
+	#carouselExampleControls{
+		width: 100%;
+		.carousel-inner{
+			border-radius: 1em;
+			height:16em;
+			box-shadow: $sombraCard;	
+		}
+		@media all and (min-width:768px){
+			.carousel-inner{
+			height: 32em;
+			}	
+		}
+	}	
+	.textoInicio{
+		.container{		
+			width: 80%;	
+			margin-top:2em;
+			h2{
+				color:$colorAzul;
+				font-family: $fuente;
+				font-weight: bold;
+				font-size: 1.3em;
+				text-align: center;
+			}
+			p{
+				color:$colorAzul;
+				font-family: $fuente;
+				font-size: 1.1em;
+				text-align: center;
+			}
+		}
+	}		
+	.serviciosInicio{
+		.container{
+			width: 80%;	
+			margin-top:1.5em;
+		
+			.row{
+				display:flex;	
+				justify-content: space-evenly;
+				.tarjetaInicio{
+					@include tarjetas;
+					max-width: 14rem;
+					padding:0;
+					margin-bottom: 1em;
+					.card-img-top{
+		 				border-radius:1em;
+		 				width: 14rem;
+					}
+
+					.card-text{
+						text-decoration: none;
+						color:$colorGris;
+						transition: all 0.5s;
+					}
+					.card-text:hover{
+						font-size: 1.1em;
+						text-decoration:none;
+					}
+
+				}
+			}	
+		}
+	}	
 }
 
-#barra {
-    height: 80%;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin-left: 200px;
-    width: 800px;
-    justify-content: space-between;
+.mainServicios{
+	margin-top: 2em;
+	.container{
+		width:95%;
+		justify-content: center;	
+	
+		.imgServicios{
+			background-image:url("../media/servicios png.png");
+			@include imagenesServicios;
+		}
+		@media all and (min-width:768px){
+			.imgServicios{
+			background-image:url("../media/servicios png.png");
+			@include imagenesServiciosAlt;	
+			}
+		}
+		.imgQuienesSomos{
+			background-image:url("../media/Quienes Somos PNG.png");
+			@include imagenesServicios;		
+		}
+		@media all and (min-width:768px){
+			.imgQuienesSomos{
+				background-image:url("../media/Quienes Somos PNG.png");
+				@include imagenesServiciosAlt;
+			}
+		}
+		ul{
+			margin:0;
+			li{
+				font-family:$fuente;
+				font-weight: $fuenteMediana;
+				font-style: $fuenteItalic;
+				font-size: 1.1em;
+				color:$azulOscuro;
+			}
+		}
+		@media all and (min-width:768px){	
+			ul{
+				display:flex;
+				flex-direction: row;
+				li{
+				font-family:$fuente;
+				font-weight: $fuenteMediana;
+				font-style: $fuenteItalic;
+				font-size: 1.1em;
+				color:$azulOscuro;
+				}
+			}
+		}	
+	}
+	.botoneraServicios{
+		margin-top: 2em;
+		text-decoration:none;
+		.row{
+			display:flex;
+			justify-content: center;
+			.botonServicios{
+				@include botones;
+				padding:0.5em;
+				transition:all 0.5s;
+			}
+			.botonServicios:hover{
+				scale:1.1;
+				text-decoration:none;
+			}
+		}
+	}		
+}	
+.tituloServicios{
+	font-family: $fuente;
+	font-weight: bold;	
+	color:$colorAzul;
+	font-size: 1.3em;
+	margin-top: 1.5em;
+	margin-left:0.2em;
+	color:$colorAzul;
+	text-align: center;
+}	
+.textoServicios{
+	font-family:$fuente;
+	font-size: 1.1em;
+	color:$colorAzul;
+	text-align: center;
+}		
+.mainContacto{
+	margin:0 1em 0 1em;
+	align-items:center;
+	border-radius:1em;
+	box-shadow: $sombraCard;
+	display: flex;
+	flex-direction: column;
+	align-items:center; 
+	background-image:url("../media/Fondo Formulario.png");
+	background-size:cover;
+	.container{
+		h2{
+			font-family: $fuente;
+			font-weight: bold;	
+			color:$colorAzul;
+			font-size: 1.5em;
+			margin-bottom: 1em;
+			margin-top:1em;
+			text-align: Center;
+		}
+		p{
+			font-family:$fuente;
+			font-weight: regular;
+			font-size: 1.1em;
+			color:$colorAzul;
+			text-align: Center;	
+		}
+		.form-control{
+			box-shadow: $sombraInset;
+			border-style:solid;
+			border-color: $colorAzul;
 
-:hover >ul {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+		}
+		label{
+			font-family: $fuente;
+			font-weight: $fuenteMediana;
+			color:$colorAzul;
+			font-size: 0.9em;
+		}
+		a{
+			@include botones;
+			margin-top: 0.7em;
+			width:6em;
+		}
+		ul{
+			margin-top: 1.3em;
+			li p{
+				font-size: 0.9em;	
+			}		
+		}
+		md-form{
+			resize: none;
+		}
+	}
+}
+@media all and (min-width:768px){
+	.mainContacto{
+		margin-top: 3em;
+		margin-bottom:3em;
+		height: 65vh;
+	}
+} 
+.mainPorfolio{
+	width: 100%; 
+	justify-content: center;
+	#carouselExampleCaptions{
+		width: 100%;
+		margin-top:1em;
+		padding: 0 1em 0 1em;
+		justify-content: center;
+		.carousel-inner{
+			border-radius: 1em;
+			box-shadow: $sombraCard;
+			height: 16em;	
+		}
+		@media all and (min-width:768px){
+			.carousel-inner{
+			height: 32em;
+			}	
+		}
+		p{
+			background-color: $azulOscuro;
+			padding:0.3em;
+			color:$colorGris;
+			font-family: $fuente;
+			font-size: 0.8em;
+			font-style: $fuenteItalic;
+			border-radius:50px;
+			opacity:75%;
+		}	
+
+	}
+	.equipo{
+		margin-top: 2.5em;
+		.row{
+		justify-content: center;
+		
+			.tarjetaInicio{
+					@include tarjetas;
+					max-width: 14rem;
+					padding:0;
+					margin:1em;
+
+					.card-img-top{
+		 				border-radius:1em;
+		 				width: 14rem;
+					}
+			}
+		}
+	}	
 }
 
 
-#submenufly {
-    display: none;
-}
-
-}
-
-
-
-header {
-font-family: 'Josefin Sans', sans-serif;
-text-align: center;
-background-color: rgba(255,255,255,1);
-
-
-    nav {
-        padding: 10px 15px;
-        position: fixed;
-        top:0
-    }
-
-
-    ul {
-    margin-top: 40px;
-    list-style: none;
-}
-
-    li {
-    margin-left: 15px;
-}
-
-    a {
-    text-decoration: none; color: rgb(255, 255, 255);
-    font-size: 20px;
-    padding: 15px;
-    background-color: rgba(26,116,143,1);
-    border-radius: 60%;
-    border-color: white 1px 2px;
-}
-
-
-    h1 {
-        font-size: 20px;
-        background-color: rgba(26,116,143,1);
-    }
-
-
-#logoFly {
-    width: 80px;
-    float: left;
-}
-
-#logoNav img{
-width: 250px;
-}
-
-}
-    }
-}
-
-/*tarjetasconflex*/
-
-.tarjetasInicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 10rem;
-}
-
-.tarjeta
-{
-    .Superior{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: space-around;
-    margin-left: 25%;
-}
-
-.Inferior {
-    display: flex;
-    flex-direction: row;
-    margin-left: 25%
-}
-
-.tarjeta1 {
-border-color: black;
-border-width: 3px;
-width: 120;
-}
-
-
-.imagenTarjetas {
-    max-width: 50px;
-}
-
-.tarjetaSuperior{
-    color: rgb(255, 255, 255);
-    text-shadow: none;
-    text-decoration: none;
-}
-
-.tarjetaInferior {
-    color: rgb(255, 255, 255);
-    text-shadow: none;
-    text-decoration: none;
-}
-/**aca va el mixin**/
-
-@mixin botones {
-    background-color: $colorPrincipal;
-    border-radius: 5px;
-    font-weight: $estilo-fuente;
-}
-
-.botonTarjetas 
-{
-    @include botones;
-    margin-top: 30px;
-}
-
-/**aca termina el mixin**/
-
-a {
-    width: 130px;
-    background-color: rgb(26, 116, 143);
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    text-decoration: none;
-    color: white;
-}
-
-}
-
-
-
-    .titulo {
-        color: rgb(255, 255, 255);
-        background-color:rgb(26, 116, 143);
-        text-align: center;
-    }
-
-    .fraseInicial {
-        color: rgb(255, 255, 255);
-        background-color: rgb(26, 116, 143);
-        margin-top: 0;
-        text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size:$tamaño-fuente-grande/2;
-        margin-top: 30x;
-    }
-
-    /*footer*/
-
-    footer {
-        margin-top: 100%;
-        color: rgba(26,116,143,1);
-        text-decoration: none;
-        font-family: 'Josefin Sans', sans-serif;
-        text-align: center;
-        text-shadow: rgb(19, 88, 109) 0.5px 1px;
-        border-color:  rgba(26,116,143,1);
-
-    div {
-        color: rgba(26,116,143,1);
-        text-decoration: none;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-        
-    }
-
-    a {
-        color: rgba(26,116,143,1);
-        text-decoration: none;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-    }
-
-    .contactanos{
-        color: rgba(26,116,143,1);
-        text-decoration: none;
-        display: flex;
-        justify-content: space-around;
-
-    }
-}
-
-
-    /*Aca empieza la pagina "servicios"*/
-    
-.bodyServicios {
-    background-color: rgb(26, 116, 143);
-}
-
-.serviciosTitulo {
-    color: white;
-    background-color: rgb(26, 116, 143);
-    text-align: center;
-    margin-top: 150px;
-    font-size: 50px;
-}
-
-
-.servicios {
-        background-color: rgb(26, 116, 143);
-        color: white;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 25px;
-        text-align: center;
-        margin-top: 150px;
-
-    }
-
-    .subtituloServicios {
-        color: white;
-        background-color: rgb(26, 116, 143);
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 25px;
-        text-align: center;
-        margin-top: 200px;
-    }   
-
-    .epigrafeServicios {
-        color: rgb(255, 255, 255);
-        text-align: center;
-        margin-top: 150px;
-        font-size: 30px;
-    }
-
-    .imagenServicios {
-        margin-left: 270px;
-        margin-bottom: 300x;
-    }
-
-    /*aca empieza la pagina "quienessomos"*/
-
-
-    .titulosomosFly {
-        width: 500px;
-        margin-left: 35%;
-        margin-top: 150px;  
-    }
-
-    .animacionFly {
-        animation-duration: 1.5s;
-        animation-name: animacionFly;
-        animation-iteration-count: 1;
-    }
-
-    @keyframes animacionFly {
-        from {
-            -webkit-transform: rotate(0deg);
-            transform: rotateY(0deg);
-        }
-        50%{
-            -webkit-transform: rotate(180deg);
-            transform: rotateY(180deg);
-        }
-        to {
-            -webkit-transform: rotate(360deg);
-            transform: rotateY(360deg);
-            }
-    }
-
-    .somosFly {
-        background-color: rgb(26, 116, 143);
-        color: white;
-        text-align: center;
-        margin-top: 5%;
-        margin-left: 40%;
-        display: flex;
-        align-items: center;
-    }
-
-    .parrafoSomos {
-        color:white;
-        text-align: center;
-        margin-top: 50px;
-    }
-    .subtitlesomosFly {
-        text-align: center;
-        color: white;
-    }
-
-    iframe {
-        margin-left: 30%;
-        color: white;
-        margin-top: 70px;
-
-    }
-
-    /*Aca empieza el portfolio con grid*/
-
-    .tituloPortfolio {
-        background-color: rgb(26, 116, 143);
-        color: white;
-        text-align: center;
-        margin-top: 100px;
-    }
-
-    .subtituloPortfolio {
-        background-color: rgb(26, 116, 143);
-        color: white;
-        text-align: center;
-    }
-
-    .gridPortfolio {
-        grid-template-areas: 
-        "uno dos" 
-        "tres cuatro";
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .uno {
-        grid-area: "uno";
-    }
-
-    .dos {
-        grid-area: "dos";
-    }
-
-    .tres {
-        grid-area:"tres";
-    }
-
-    .cuatro {
-        grid-area:"cuatro";
-    }
-
-    /*Aca empieza la seccion "contactanos*/
-
-    .textoContacto {
-        background-color: rgb(26, 116, 143);
-        color: white;
-        text-align: center;
-        display: flex;
-        align-content: center;
-        align-items: center;
-    }
-
-    form {
-        display: flex;
-        flex-direction: row;
-        flex-grow: 100%;
-        align-content: center;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 15%;
-        margin-bottom: 0%;
-    }
-
-/**media**/
-
-@media all and (min-width:768px) {
-
-}

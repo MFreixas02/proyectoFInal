@@ -1,353 +1,487 @@
-/* line 3, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 body {
-  background-color: #1a748f;
-  background: white;
-  background: linear-gradient(0deg, white 0%, #1a748f 29%); }
-  /* line 8, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  body main {
-    width: 100%;
-    height: 50vh;
-    background-color: color #1a748f;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: black;
-    text-shadow: black 2px 2px 10px;
-    font-family: 'Josefin Sans', sans-serif; }
-    /* line 18, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-    body main .tituloCarousel {
-      color: white;
-      text-align: center; }
-    /* line 24, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-    body main .imagenejemplo {
-      width: 63%;
-      border-radius: 20px;
-      border-width: 100%;
-      background-color: #1a748f;
-      background-position: center;
-      margin-left: 280px;
-      margin-top: 120px;
-      display: flex;
-      align-items: center; }
-    /* line 36, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-    body main .titulo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 100px; }
-    /* line 44, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-    body main .fondonavegador {
-      background-color: #1a748f; }
-    /* line 48, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-    body main #barra {
-      height: 80%;
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      margin-left: 200px;
-      width: 800px;
-      justify-content: space-between; }
-      /* line 57, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main #barra :hover > ul {
-        display: flex;
-        flex-direction: row;
-        align-content: center; }
-      /* line 64, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main #barra #submenufly {
-        display: none; }
-    /* line 72, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-    body main header {
-      font-family: 'Josefin Sans', sans-serif;
-      text-align: center;
-      background-color: white; }
-      /* line 78, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main header nav {
-        padding: 10px 15px;
-        position: fixed;
-        top: 0; }
-      /* line 85, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main header ul {
-        margin-top: 40px;
-        list-style: none; }
-      /* line 90, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main header li {
-        margin-left: 15px; }
-      /* line 94, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main header a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        padding: 15px;
-        background-color: #1a748f;
-        border-radius: 60%;
-        border-color: white 1px 2px; }
-      /* line 104, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main header h1 {
-        font-size: 20px;
-        background-color: #1a748f; }
-      /* line 110, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main header #logoFly {
-        width: 80px;
-        float: left; }
-      /* line 115, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-      body main header #logoNav img {
-        width: 250px; }
+  background-color: #E5E5E5;
+}
 
-/*tarjetasconflex*/
-/* line 125, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.tarjetasInicio {
+header {
+  background: linear-gradient(#1A748F, #1A748F);
+  min-height: 80px;
+  margin-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 8px 0px 8px #c7c4c4;
+}
+
+header .container .row {
+  justify-content: center;
+}
+
+header .container .row .navbar {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0;
+}
+
+header .container .row .navbar .navbar-brand {
+  padding: 0;
+}
+
+header .container .row .navbar .navbar-brand .logoM {
+  width: 7em;
+  margin-left: 1em;
+}
+
+@media all and (min-width: 768px) {
+  header .container .row .navbar .navbar-brand .logoM {
+    width: 7em;
+    margin-left: 6em;
+  }
+}
+
+header .container .row .navbar .nav-item .nav-link {
+  color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  padding-left: 1em;
+  transition: all 0.5s;
+}
+
+header .container .row .navbar .nav-item .nav-link:hover {
+  color: #E5E5E5;
+}
+
+header .container .row .navbar #dropdownMenuLink {
+  border-style: none;
+  color: #1e5064;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  padding-left: 0.8em;
+  margin-top: 0.15em;
+  transition: all 0.5s;
+}
+
+header .container .row .navbar #dropdownMenuLink:hover {
+  color: #E5E5E5;
+}
+
+header .container .row .navbar .dropdown-menu {
+  background-color: #1A748F;
+  border-style: none;
+  margin-top: 1em;
+  border-radius: 1em;
+}
+
+header .container .row .navbar .dropdown-menu .dropdown-item {
+  color: #E5E5E5;
+}
+
+@media all and (min-width: 768px) {
+  header .container .row .navbar .dropdown-menu {
+    background: linear-gradient(#1A748F, #1A748F);
+    border-style: none;
+    margin-top: 1em;
+    border-radius: 0 0 1em 1em;
+  }
+  header .container .row .navbar .dropdown-menu .dropdown-item {
+    color: #E5E5E5;
+  }
+}
+
+header .container .row .navbar #dropdownMenuLink .dropdown .show .dropdown-item {
+  color: #1e5064;
+}
+
+header .container .row .navbar .navbar-toggler {
+  opacity: 30%;
+  background-color: #E5E5E5;
+  margin-top: 0.5em;
+  border-radius: 200px;
+}
+
+header .container .row .navbar .navbar-collapse {
+  margin-left: 1em;
+  width: 80%;
+}
+
+header .container .row .navbar #navbarNav {
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+header .container .row .navbar #navbarNav .navbar-nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: 2em;
+  background: linear-gradient(#1A748F, #1A748F);
+  height: 80px;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  justify-content: center;
+}
+
+footer .container {
+  justify-content: center;
+  height: 100%;
+}
+
+footer .container .row {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+
+footer .container .row p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #E5E5E5;
+  margin-bottom: 0;
+}
+
+footer .container .row .logoSocial {
+  margin-left: 0.6em;
+}
+
+.mainInicio {
+  width: 100%;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.mainInicio #carouselExampleControls {
+  width: 100%;
+}
+
+.mainInicio #carouselExampleControls .carousel-inner {
+  border-radius: 1em;
+  height: 16em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+}
+
+@media all and (min-width: 768px) {
+  .mainInicio #carouselExampleControls .carousel-inner {
+    height: 32em;
+  }
+}
+
+.mainInicio .textoInicio .container {
+  width: 80%;
+  margin-top: 2em;
+}
+
+.mainInicio .textoInicio .container h2 {
+  color: #1A748F;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.mainInicio .textoInicio .container p {
+  color: #1A748F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.mainInicio .serviciosInicio .container {
+  width: 80%;
+  margin-top: 1.5em;
+}
+
+.mainInicio .serviciosInicio .container .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mainInicio .serviciosInicio .container .row .tarjetaInicio {
+  border-radius: 1em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  background-color: #1A748F;
+  color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+  border-style: none;
+  text-decoration: none;
+  max-width: 14rem;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.mainInicio .serviciosInicio .container .row .tarjetaInicio .card-img-top {
+  border-radius: 1em;
+  width: 14rem;
+}
+
+.mainInicio .serviciosInicio .container .row .tarjetaInicio .card-text {
+  text-decoration: none;
+  color: #E5E5E5;
+  transition: all 0.5s;
+}
+
+.mainInicio .serviciosInicio .container .row .tarjetaInicio .card-text:hover {
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.mainServicios {
+  margin-top: 2em;
+}
+
+.mainServicios .container {
+  width: 95%;
+  justify-content: center;
+}
+
+.mainServicios .container .imgServicios {
+  background-image: url("../media/servicios png.png");
+  height: 16em;
+  border-radius: 12px;
+  background-size: cover;
+  box-shadow: 8px 0px 8px #c7c4c4;
+}
+
+@media all and (min-width: 768px) {
+  .mainServicios .container .imgServicios {
+    background-image: url("../media/servicios png.png");
+    height: 32em;
+    border-radius: 12px;
+    background-size: cover;
+    box-shadow: 8px 0px 8px #c7c4c4;
+  }
+}
+
+.mainServicios .container .imgQuienesSomos {
+  background-image: url("../media/Quienes Somos PNG.png");
+  height: 16em;
+  border-radius: 12px;
+  background-size: cover;
+  box-shadow: 8px 0px 8px #c7c4c4;
+}
+
+@media all and (min-width: 768px) {
+  .mainServicios .container .imgQuienesSomos {
+    background-image: url("../media/Quienes Somos PNG.png");
+    height: 32em;
+    border-radius: 12px;
+    background-size: cover;
+    box-shadow: 8px 0px 8px #c7c4c4;
+  }
+}
+
+.mainServicios .container ul {
+  margin: 0;
+}
+
+.mainServicios .container ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: regular;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #1e5064;
+}
+
+@media all and (min-width: 768px) {
+  .mainServicios .container ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .mainServicios .container ul li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: regular;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #1e5064;
+  }
+}
+
+.mainServicios .botoneraServicios {
+  margin-top: 2em;
+  text-decoration: none;
+}
+
+.mainServicios .botoneraServicios .row {
+  display: flex;
+  justify-content: center;
+}
+
+.mainServicios .botoneraServicios .row .botonServicios {
+  background-color: #E5E5E5;
+  color: #1A748F;
+  border-radius: 4px;
+  padding: 0.4em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  font-weight: bold;
+  border-style: none;
+  text-decoration: none;
+  padding: 0.5em;
+  transition: all 0.5s;
+}
+
+.mainServicios .botoneraServicios .row .botonServicios:hover {
+  scale: 1.1;
+  text-decoration: none;
+}
+
+.tituloServicios {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #1A748F;
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  margin-left: 0.2em;
+  color: #1A748F;
+  text-align: center;
+}
+
+.textoServicios {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  color: #1A748F;
+  text-align: center;
+}
+
+.mainContacto {
+  margin: 0 1em 0 1em;
+  align-items: center;
+  border-radius: 1em;
+  box-shadow: 8px 0px 8px #c7c4c4;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 10rem; }
-
-/* line 132, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  /**aca va el mixin**/
-  /**aca termina el mixin**/
-  /* line 134, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  .tarjeta .Superior {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: space-around;
-    margin-left: 25%; }
-  /* line 142, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  .tarjeta .Inferior {
-    display: flex;
-    flex-direction: row;
-    margin-left: 25%; }
-  /* line 148, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  .tarjeta .tarjeta1 {
-    border-color: black;
-    border-width: 3px;
-    width: 120; }
-  /* line 155, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  .tarjeta .imagenTarjetas {
-    max-width: 50px; }
-  /* line 159, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  .tarjeta .tarjetaSuperior {
-    color: white;
-    text-shadow: none;
-    text-decoration: none; }
-  /* line 165, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  .tarjeta .tarjetaInferior {
-    color: white;
-    text-shadow: none;
-    text-decoration: none; }
-  /* line 178, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  .tarjeta .botonTarjetas {
-    background-color: #1a748f;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 30px; }
-  /* line 186, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  .tarjeta a {
-    width: 130px;
-    background-color: #1a748f;
-    border-width: 1px;
-    border-color: black;
-    text-decoration: none;
-    color: white; }
-
-/* line 199, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.titulo {
-  color: white;
-  background-color: #1a748f;
-  text-align: center; }
-
-/* line 205, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.fraseInicial {
-  color: white;
-  background-color: #1a748f;
-  margin-top: 0;
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  margin-top: 30x; }
-
-/*footer*/
-/* line 217, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-footer {
-  margin-top: 93%;
-  color: #1a748f;
-  text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-  text-shadow: #13586d 0.5px 1px;
-  border-color: #1a748f; }
-  /* line 226, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  footer div {
-    color: #1a748f;
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px; }
-  /* line 234, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  footer a {
-    color: #1a748f;
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px; }
-  /* line 241, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-  footer .contactanos {
-    color: #1a748f;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-around; }
-
-/*Aca empieza la pagina "servicios"*/
-/* line 253, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.bodyServicios {
-  background-color: #1a748f; }
-
-/* line 257, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.serviciosTitulo {
-  color: white;
-  background-color: #1a748f;
-  text-align: center;
-  margin-top: 150px;
-  font-size: 50px; }
-
-/* line 266, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.servicios {
-  background-color: #1a748f;
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 150px; }
-
-/* line 276, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.subtituloServicios {
-  color: white;
-  background-color: #1a748f;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 200px; }
-
-/* line 285, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.epigrafeServicios {
-  color: white;
-  text-align: center;
-  margin-top: 150px;
-  font-size: 30px; }
-
-/* line 292, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.imagenServicios {
-  margin-left: 270px;
-  margin-bottom: 300x; }
-
-/*aca empieza la pagina "quienessomos"*/
-/* line 300, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.titulosomosFly {
-  width: 500px;
-  margin-left: 35%;
-  margin-top: 150px; }
-
-/* line 306, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.animacionFly {
-  animation-duration: 1.5s;
-  animation-name: animacionFly;
-  animation-iteration-count: 1; }
-
-@keyframes animacionFly {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotateY(0deg); }
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotateY(180deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotateY(360deg); } }
-
-/* line 327, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.somosFly {
-  background-color: #1a748f;
-  color: white;
-  text-align: center;
-  margin-top: 5%;
-  margin-left: 40%;
-  display: flex;
-  align-items: center; }
-
-/* line 337, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.parrafoSomos {
-  color: white;
-  text-align: center;
-  margin-top: 50px; }
-
-/* line 342, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.subtitlesomosFly {
-  text-align: center;
-  color: white; }
-
-/* line 347, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-iframe {
-  margin-left: 30%;
-  color: white;
-  margin-top: 70px; }
-
-/*Aca empieza el portfolio con grid*/
-/* line 356, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.tituloPortfolio {
-  background-color: #1a748f;
-  color: white;
-  text-align: center;
-  margin-top: 100px; }
-
-/* line 363, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.subtituloPortfolio {
-  background-color: #1a748f;
-  color: white;
-  text-align: center; }
-
-/* line 369, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.gridPortfolio {
-  grid-template-areas: "uno dos" 
- "tres cuatro";
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  justify-items: center;
-  align-items: center; }
-
-/* line 380, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.uno {
-  grid-area: "uno"; }
-
-/* line 384, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.dos {
-  grid-area: "dos"; }
-
-/* line 388, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.tres {
-  grid-area: "tres"; }
-
-/* line 392, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.cuatro {
-  grid-area: "cuatro"; }
-
-/*Aca empieza la seccion "contactanos*/
-/* line 398, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-.textoContacto {
-  background-color: #1a748f;
-  color: white;
-  text-align: center;
-  display: flex;
-  align-content: center;
-  align-items: center; }
-
-/* line 407, ../../Proyecto Final 3 era entrega/proyecto + SEO + Seo2 + Git/scss/styles.scss */
-form {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 100%;
-  align-content: center;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 15%;
-  margin-bottom: 0%; }
+  background-image: url("../media/Fondo Formulario.png");
+  background-size: cover;
+}
 
-/**media**/
+.mainContacto .container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #1A748F;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: Center;
+}
 
-/*# sourceMappingURL=styles.css.map */
+.mainContacto .container p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: regular;
+  font-size: 1.1em;
+  color: #1A748F;
+  text-align: Center;
+}
+
+.mainContacto .container .form-control {
+  box-shadow: inset 5px 5px 12px #d7dadd;
+  border-style: solid;
+  border-color: #1A748F;
+}
+
+.mainContacto .container label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: regular;
+  color: #1A748F;
+  font-size: 0.9em;
+}
+
+.mainContacto .container a {
+  background-color: #E5E5E5;
+  color: #1A748F;
+  border-radius: 4px;
+  padding: 0.4em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  font-weight: bold;
+  border-style: none;
+  text-decoration: none;
+  margin-top: 0.7em;
+  width: 6em;
+}
+
+.mainContacto .container ul {
+  margin-top: 1.3em;
+}
+
+.mainContacto .container ul li p {
+  font-size: 0.9em;
+}
+
+.mainContacto .container md-form {
+  resize: none;
+}
+
+@media all and (min-width: 768px) {
+  .mainContacto {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    height: 65vh;
+  }
+}
+
+.mainPorfolio {
+  width: 100%;
+  justify-content: center;
+}
+
+.mainPorfolio #carouselExampleCaptions {
+  width: 100%;
+  margin-top: 1em;
+  padding: 0 1em 0 1em;
+  justify-content: center;
+}
+
+.mainPorfolio #carouselExampleCaptions .carousel-inner {
+  border-radius: 1em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  height: 16em;
+}
+
+@media all and (min-width: 768px) {
+  .mainPorfolio #carouselExampleCaptions .carousel-inner {
+    height: 32em;
+  }
+}
+
+.mainPorfolio #carouselExampleCaptions p {
+  background-color: #1e5064;
+  padding: 0.3em;
+  color: #E5E5E5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-style: italic;
+  border-radius: 50px;
+  opacity: 75%;
+}
+
+.mainPorfolio .equipo {
+  margin-top: 2.5em;
+}
+
+.mainPorfolio .equipo .row {
+  justify-content: center;
+}
+
+.mainPorfolio .equipo .row .tarjetaInicio {
+  border-radius: 1em;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  background-color: #1A748F;
+  color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+  border-style: none;
+  text-decoration: none;
+  max-width: 14rem;
+  padding: 0;
+  margin: 1em;
+}
+
+.mainPorfolio .equipo .row .tarjetaInicio .card-img-top {
+  border-radius: 1em;
+  width: 14rem;
+}
